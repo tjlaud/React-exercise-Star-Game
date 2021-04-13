@@ -1,7 +1,15 @@
 import React from "react";
+import "../App.css";
+import utils from "../math-utils";
 
-function StarDisplay() {
-  return <h2>StarDisplay</h2>;
+function StarDisplay(props) {
+  return (
+    <>
+      {utils.range(1, props.count).map((starId) => (
+        <div key={starId} className="star" />
+      ))}
+    </>
+  );
 }
 
 export default StarDisplay;
