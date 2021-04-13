@@ -3,10 +3,10 @@ import React from "react";
 function PlayNumber(props) {
   // Color Theme
   const colors = {
-    available: "lightgray",
-    used: "lightgreen",
-    wrong: "lightcoral",
-    candidate: "deepskyblue",
+    available: "rgb(111, 124, 103)",
+    used: "rgb(76, 93, 66)",
+    wrong: "rgb(168, 73, 44)",
+    candidate: "rgb(112, 170, 143)",
   };
 
   return (

@@ -1,10 +1,20 @@
-.App {
-  text-align: center;
+/* body {
+  margin-top: -10px !important;
+} */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(62, 88, 65);
+  min-height: 100vh;
 }
 
 .game {
   max-width: 500px;
-  margin: 0 auto;
+  background-color: transparent;
+  margin-bottom: -15px !important;
 }
 
 .body {
@@ -12,27 +22,30 @@
 }
 
 .help {
-  color: #666;
+  color: rgb(214, 136, 34);
   margin: 10px;
   text-align: center;
+  font-size: large;
+  font-weight: bold;
 }
 
 .left {
   text-align: center;
   width: 50%;
-  border: thin solid #ddd;
+  border: thin solid rgb(214, 136, 34);
 }
 
 .right {
   text-align: center;
   padding: 10px;
   width: 50%;
-  border: thin solid #ddd;
+  border: thin solid rgb(214, 136, 34);
 }
 
 .star {
   display: inline-block;
   margin: 0 15px;
+  color: rgb(214, 136, 34);
 }
 
 .star:after {
@@ -41,8 +54,7 @@
 }
 
 .number {
-  background-color: #eee;
-  border: thin solid #ddd;
+  border: thin solid rgb(124, 108, 37);
   width: 45px;
   height: 45px;
   margin: 10px;
@@ -52,17 +64,27 @@
 .number:focus,
 .number:active {
   outline: none;
-  border: thin solid #ddd;
+  border: thin solid rgb(214, 136, 34);
 }
 
 .timer {
-  color: #666;
-  margin-top: 3px;
-  margin-left: 3px;
+  color: rgb(214, 136, 34);
+  margin: 10px;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
 }
 
 .game-done .message {
   font-size: 250%;
   font-weight: bold;
   margin: 15px;
+}
+
+.playAgainButton {
+  background-color: rgb(214, 136, 34);
+  padding: 5px;
+  font-size: large;
+  color: rgb(46, 63, 48);
+  border-radius: 6px;
 }
